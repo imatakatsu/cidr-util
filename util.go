@@ -57,3 +57,8 @@ func (c *IPCidr) RandomIP() net.IP {
 
 	return net.IP(ip)
 }
+
+func (c *IPCidr) String() string {
+	mask_size, _ := c.mask.Size()
+	return fmt.Sprintf("%s/%d", c.base.String(), mask_size)
+}
