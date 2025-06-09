@@ -3,6 +3,7 @@ package cidr_util
 import (
 	"crypto/rand"
 	"net"
+	"fmt"
 )
 
 type IPCidr struct {
